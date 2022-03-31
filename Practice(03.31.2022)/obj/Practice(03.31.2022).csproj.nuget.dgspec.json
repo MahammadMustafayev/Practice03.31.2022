@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tu7ekdm78\\Desktop\\Practice\\Practice(03.31.2022)\\Practice(03.31.2022)\\Practice(03.31.2022).csproj": {}
+    "C:\\Users\\admin\\OneDrive\\İş masası\\Practice03.31.2022\\Practice(03.31.2022)\\Practice(03.31.2022).csproj": {}
   },
   "projects": {
-    "C:\\Users\\tu7ekdm78\\Desktop\\Practice\\Practice(03.31.2022)\\Practice(03.31.2022)\\Practice(03.31.2022).csproj": {
+    "C:\\Users\\admin\\OneDrive\\İş masası\\Practice03.31.2022\\Practice(03.31.2022)\\Practice(03.31.2022).csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tu7ekdm78\\Desktop\\Practice\\Practice(03.31.2022)\\Practice(03.31.2022)\\Practice(03.31.2022).csproj",
+        "projectUniqueName": "C:\\Users\\admin\\OneDrive\\İş masası\\Practice03.31.2022\\Practice(03.31.2022)\\Practice(03.31.2022).csproj",
         "projectName": "Practice(03.31.2022)",
-        "projectPath": "C:\\Users\\tu7ekdm78\\Desktop\\Practice\\Practice(03.31.2022)\\Practice(03.31.2022)\\Practice(03.31.2022).csproj",
-        "packagesPath": "C:\\Users\\tu7ekdm78\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tu7ekdm78\\Desktop\\Practice\\Practice(03.31.2022)\\Practice(03.31.2022)\\obj\\",
+        "projectPath": "C:\\Users\\admin\\OneDrive\\İş masası\\Practice03.31.2022\\Practice(03.31.2022)\\Practice(03.31.2022).csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\OneDrive\\İş masası\\Practice03.31.2022\\Practice(03.31.2022)\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\tu7ekdm78\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

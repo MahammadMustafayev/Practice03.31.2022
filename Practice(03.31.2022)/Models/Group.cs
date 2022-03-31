@@ -30,13 +30,12 @@ namespace Practice_03._31._2022_.Models
             StudentLimit = studentLimit;
         }
 
-        public Student[] _students = new Student[0];
-
+        private Student[] _students = new Student[0];
         public bool CheckGroupNo(string groupNo)
         {
             bool IsUpper = false;
             bool IsDigit = false;
-            if (!String.IsNullOrEmpty(groupNo) || !String.IsNullOrWhiteSpace(groupNo))
+            if (groupNo.Length >=5 || !String.IsNullOrEmpty(groupNo) || !String.IsNullOrWhiteSpace(groupNo))
             {
                 for (int i = 0; i < groupNo.Length; i++)
                 {
@@ -54,19 +53,19 @@ namespace Practice_03._31._2022_.Models
             _students[_students.Length - 1] = student;
             Console.WriteLine(student);
         }
-        public bool GetStudent(int ? Id)
+        public bool GetStudent(int? id)
         {
-            //for (int i = 0; i < length; i++)
-            //{
+            for (int i = 0; i < _students.Length; i++)
+            {
 
-            //}
+            }
             return true;
         }
-        public void GetAllStudents(Student _student)
+        public void GetAllStudents(Student student)
         {
-            for (int i =  _students.Length- 1; i >= 0; i--)
+            for (int i = _students.Length - 1; i >= 0; i--)
             {
-                Console.WriteLine(_students);
+                Console.WriteLine(student);
             }
         }
     }
