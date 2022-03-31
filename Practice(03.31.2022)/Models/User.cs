@@ -28,22 +28,22 @@ namespace Practice_03._31._2022_.Models
         }
         public bool Passwordchecker(string password)
         {
-                bool IsUpper = false;
-                bool IsDigit = false;
-                bool IsLower = false;
-                if (password.Length >= 8 || String.IsNullOrWhiteSpace(password) || String.IsNullOrEmpty(password))
+            bool IsUpper = false;
+            bool IsDigit = false;
+            bool IsLower = false;
+            if (password.Length >= 8 || !String.IsNullOrWhiteSpace(password) || !String.IsNullOrEmpty(password))
+            {
+                for (int i = 0; i < password.Length; i++)
                 {
-                   for (int i = 0; i < password.Length; i++)
-                   {
-                    if (char.IsUpper(password[i])) IsUpper = true;
-                    else if (char.IsDigit(password[i])) IsDigit= true;
-                    else if (char.IsDigit(password[i])) IsLower= true;
-                   }
-                }
-              if (IsUpper == true && IsLower == true && IsDigit == true) return true;
-            return false;
-        }
 
+                    if (char.IsUpper(password[i])) IsUpper = true;
+                    else if (char.IsDigit(password[i])) IsDigit = true;
+                    else if (char.IsDigit(password[i])) IsLower = true;
+                    if (IsUpper == true || IsLower == true || IsDigit == true) return true;
+                }
+            }
+            return false;
+        }      
         public void ShowInfo()
         {
             Console.WriteLine($"Id:{Id} FullName:{FullName} Email:{Email}");

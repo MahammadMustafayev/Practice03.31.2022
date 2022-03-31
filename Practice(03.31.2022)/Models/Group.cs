@@ -36,21 +36,23 @@ namespace Practice_03._31._2022_.Models
         {
             bool IsUpper = false;
             bool IsDigit = false;
-            if (String.IsNullOrEmpty(groupNo) && String.IsNullOrWhiteSpace(groupNo))
+            if (!String.IsNullOrEmpty(groupNo) || !String.IsNullOrWhiteSpace(groupNo))
             {
                 for (int i = 0; i < groupNo.Length; i++)
                 {
-                    if (char.IsUpper(groupNo[2])) IsUpper = true;
-                    else if (char.IsDigit(groupNo[5])) IsDigit = true;
+                    if (char.IsUpper(groupNo[i])) IsUpper = true;
+                    else if (char.IsDigit(groupNo[i])) IsDigit = true;
+                    if (IsDigit == true || IsUpper == true) return true;
                 }
-                return (IsDigit == true && IsUpper==true);
             }
-            return false;
+          return false;
         }
         public void AddStudents(Student student)
         {
+           
             Array.Resize(ref _students,_students.Length+1);
             _students[_students.Length - 1] = student;
+            Console.WriteLine(student);
         }
         public bool GetStudent(int ? Id)
         {
@@ -60,7 +62,7 @@ namespace Practice_03._31._2022_.Models
             //}
             return true;
         }
-        public void GetAllStudents()
+        public void GetAllStudents(Student _student)
         {
             for (int i =  _students.Length- 1; i >= 0; i--)
             {
