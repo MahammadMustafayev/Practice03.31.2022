@@ -18,7 +18,7 @@ namespace Practice_03._31._2022_.Models
             
             set 
             {
-                if (StudentLimit>5 || StudentLimit<18)
+                if (_studentLimit >= 5 || _studentLimit <= 18)
                 {
                     _studentLimit = value;
                 }
@@ -53,13 +53,16 @@ namespace Practice_03._31._2022_.Models
             _students[_students.Length - 1] = student;
             Console.WriteLine(student);
         }
-        public bool GetStudent(int? id)
+        public Student GetStudent(int? id)
         {
-            for (int i = 0; i < _students.Length; i++)
+            foreach (var item in _students)
             {
-
+                if (item.Id.Equals(id))
+                {
+                    return item;
+                }
             }
-            return true;
+            throw new CustomException("Not-found item");
         }
         public void GetAllStudents(Student student)
         {

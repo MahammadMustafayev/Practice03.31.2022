@@ -183,8 +183,6 @@ namespace Practice_03._31._2022_
                         break;
                 }
             } while (choose!=0);
-
-
         }
     }
 }
